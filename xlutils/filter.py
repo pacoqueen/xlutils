@@ -6,15 +6,15 @@
 
 import logging
 import os
-import xlrd,xlwt
+import lib.xlrd.xlrd as xlrd, lib.xlwt.xlwt as xlwt
 
 from functools import partial
 from glob import glob
 from shutil import rmtree
 from tempfile import mkdtemp
-from xlutils.display import quoted_sheet_name,cell_display
-from xlutils.margins import cells_all_junk
-from xlwt.Style import default_style
+from lib.xlutils.xlutils.display import quoted_sheet_name,cell_display
+from lib.xlutils.xlutils.margins import cells_all_junk
+from lib.xlwt.xlwt.Style import default_style
 logger = logging.getLogger('xlutils.filter')
 
 class BaseReader:
