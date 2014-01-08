@@ -12,3 +12,4 @@
 /.tox
 /htmlcov
 /build
+*.swp
